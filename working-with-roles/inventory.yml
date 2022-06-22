@@ -1,4 +1,5 @@
 [servers]
-web_server_1   ansible_host=<ip_address_of_server>   ansible_user=<username_of_server>  ansible_ssh_private_key_file=~/<name_of_pem_file>.pem
-web_server_2  ansible_host=<ip_address_of_server>  ansible_user=<username_of_server>  ansible_ssh_private_key_file=~/<name_of_pem_file>.pem
+web_server_1   ansible_host=<instance_ip_address>   ansible_user=<instance_username>  ansible_ssh_private_key_file=~/<pem_file_name>.pem
+web_server_2  ansible_host=<instance_ip_address>  ansible_user=<instance_username>  ansible_ssh_private_key_file=~/<pem_file_name>.pem
+instance_ubuntu  ansible_host=<instance_ip_address>  ansible_user=<instance_username>  ansible_ssh_private_key_file=~/<pem_file_name>.pem
 

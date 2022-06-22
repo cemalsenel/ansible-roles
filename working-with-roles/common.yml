@@ -1,0 +1,14 @@
+---
+-
+  hosts: instance_ubuntu
+  become: yes
+  become_method: sudo
+
+  roles:
+    - common
+    - { role: ansible-role-ntp, ntp_timezone: UTC}
+    - docker
+    - ansible-prometheus-node-exporter
+
+  tasks: 
+    - import_tasks: 'standard_deploys/slack.yml'
